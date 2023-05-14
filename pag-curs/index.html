@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lollapalooza Argentina</title>
+    <link rel="stylesheet" href="index.js">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    
+<header>
+    <div id="header_block"><div id="header_text"><img src="images/lollap.png" alt="lollapalooza logo">
+        
+
+        <!-- Intenté usar nth-child, first-child, etc. Pero no se podía asi que le asigné una id a cada item, sé que está mal pero no pude solucionar lo anterior. -->
+
+        <div id="link_holder"><ul id="link_list">
+        <a href="#" id="fi_link">----</a>
+        <a href="#" id="se_link">----</a>
+        <a href="#" id="th_link">Contacto</a></ul></div>
+        <i class="fa-solid fa-envelope" style="color: #000000;"></i>
+
+        <!-- <img src="images/sobre.png" alt=""> -->
+
+</div>
+</div>
+
+</header>
+
+<main>
+
+    <!-- Se usa H1 por CEO -->
+    
+    <br>
+    <h1>Disfruta la experiencia palooza con <span id="changes">Tus amigos</span></h1>
+
+
+    <script>
+        const changingSpan = document.getElementById("changes");
+        const texts = ["Chano", "Billie", "Wos", "Trueno", "Drake", "Dillom", "Aurora", "Skrillex", "Vos", "Tus amigos"];
+        let currentIndex = 0;
+    
+        function changeText() {
+          changingSpan.textContent = texts[currentIndex];
+          currentIndex = (currentIndex + 1) % texts.length;
+        }
+    
+        setInterval(changeText, 3000);
+      </script>
+
+
+
+    <div class="diagonal">
+        <div class="diag_content"><img src="images/crowd.jpg" alt="lollapalooza 2023 crowd"></div>
+    </div>
+    
+    <br>
+    <br>
+
+    <div class="flex-container">
+        <div class="blocks">
+
+            <iframe width="588" height="330" src="https://www.youtube.com/embed/XLq-UrLbARA" title="Día 1 | Lollapalooza Argentina 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <h2 style="color: rgb(255, 255, 255); font-size: 410px">Dia 1</h2>
+        </div>
+
+        <div class="blocks">
+            <h2 style="color: rgb(255, 255, 255); font-size: 410px">Dia 2</h2>
+
+            <iframe width="588" height="330" src="https://www.youtube.com/embed/i-8iTmZjlnU" title="Día 2 | Lollapalooza Argentina 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div class="blocks">
+
+            <iframe width="588" height="330" src="https://www.youtube.com/embed/iJFzSrPnLxk" title="Día 3 | Lollapalooza Argentina 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <h2 style="color: rgb(255, 255, 255); font-size: 410px">Dia 3</h2>
+        </div>
+    </div>
+
+    <br>
+
+
+</main>
+
+
+<footer>
+    <div class="flex-container">
+    <div>
+    <h3>Lollaworld</h3>
+
+    <br>
+
+    <ul class="flex-container">
+        <a href="https://global.lollapalooza.com/">Lollapalooza Global</a>
+        <a href="https://www.lollapaloozabr.com/">Lollapalooza Brasil</a>
+        <a href="https://www.lollapaloozacl.com/">Lollapalooza Chile</a>
+    </ul>
+    </div>
+
+    <div>
+        <h3>Ayuda</h3>
+
+        <br>
+
+        <ul class="flex-container">
+            <a href="#">Contacto</a>
+            <a href="#">Información</a>
+        </ul>
+    </div>
+
+    <div>
+        <h3>Redes</h3>
+        
+        <br>
+
+        <ul class="flex-container">
+            <a href="http://youtube.com/lollapaloozaar">Youtube</a>
+            <a href="http://www.facebook.com/lollapaloozaar">Facebook</a>
+            <a href="http://instagram.com/lollapaloozaar">Instagram</a>
+            <a href="https://www.tiktok.com/@lollapaloozaar?_t=8ZZYkNJrMxx&_r=1">TikTok</a>
+        </ul>
+    </div>
+    </div>
+
+    <div id="underfoot">
+        <div>
+            <p>© Lollapalooza, LLC</p>
+        </div>
+        <div>
+            <a href="https://help.livenation.com/hc/en-us/articles/10468828916113-Terms-of-Use" style="color: white;">Terminos de uso</a>
+        </div>
+    </div>
+
+</footer>
+
+</body>
+</html>
