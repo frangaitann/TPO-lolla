@@ -27,13 +27,11 @@ html {
 .row{
     display: flex;
     flex-flow: wrap;
-    margin: 0 -15px;
     padding: 10px 15px;
 }
 
 .column{
     flex: 0 0 100%;
-    padding: 0 15px;
 }
 
 .column.half{
@@ -64,4 +62,6 @@ input[type="submit"]{
     background-color:#450E17ff;
     font-size: 18px;
     padding: 8px;
+    color: white;
+    text-transform: uppercase;
 }

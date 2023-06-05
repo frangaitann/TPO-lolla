@@ -65,20 +65,15 @@
             <form action="">
                 <div class="row">
                     <div class="column">
-                        <input type="text" placeholder="Nombre" name="nombre" required>
+                        <input type="text" placeholder="Nombre" name="nombre" required oninvalid="this.setCustomValidity('No puede estar vacío')">
+                    
+                        <input type="text" placeholder="Apellido" name="apellido" required oninvalid="this.setCustomValidity('No puede estar vacío')">
+                   
+                        <input type="text" placeholder="Email" name="email" required oninvalid="this.setCustomValidity('No puede estar vacío')">
+                    
+                        <textarea type="text" placeholder="Mensaje" name="mensaje" required oninvalid="this.setCustomValidity('No puede estar vacío')"></textarea>
                     </div>
-                    <div class="column">
-                        <input type="text" placeholder="Apellido" name="apellido" required>
-                    </div>
-                    <div class="column">
-                        <input type="text" placeholder="Email" name="email" required>
-                    </div>
-                    <div class="column">
-                        <textarea type="text" placeholder="Mensaje" name="mensaje" required></textarea>
-                    </div>
-                    <div class="column">
-                        <input type="submit" value="Submit">
-                    </div>
+                        <input type="submit" value="Enviar">
                 </div>
             </form>
         </div>
@@ -139,6 +134,21 @@
     
 
     </footer>
+
+    <script>
+        const btn = document.getElementById('btn');
+
+        btn.addEventListener('click', function handleClick(event) {
+        event.preventDefault();
+
+        const inputs = document.querySelectorAll('#first_name, #last_name');
+
+        inputs.forEach(input => {
+            input.value = '';
+        });
+        });
+
+    </script>
     
 </body>
 </html>
