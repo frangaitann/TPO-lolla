@@ -416,17 +416,17 @@ h3 {
     }
 
     #mobile-blocks div:nth-child(1) {
-        background-image: url(../images/lolla-arg-portada.jpg);
+        background-image: url(../media/lolla-arg-portada.jpg);
         border-top-left-radius: 100px;
         border-top: 15px solid rgb(59, 143, 65);
     }
 
     #mobile-blocks div:nth-child(2) {
-        background-image: url(../images/Primer-Lollapalooza.jpg);
+        background-image: url(../media/Primer-Lollapalooza.jpg);
     }
 
     #mobile-blocks div:nth-child(3) {
-        background-image: url(../images/lollapalooza-argentina.jpg);
+        background-image: url(../media/lollapalooza-argentina.jpg);
         border-bottom: 15px solid rgb(161, 164, 23);
         border-bottom-right-radius: 100px;
         margin-bottom: 100px;
